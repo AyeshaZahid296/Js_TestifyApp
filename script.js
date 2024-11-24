@@ -64,5 +64,15 @@ if (document.getElementById('quiz')) {
   startTimer();
 }
 function goBackToHome() {
-  window.location.href = "index.html"; // Change "index.html" to your home page file name
+  window.location.href = "index.html";
 }
+
+// Add hover animation on buttons
+document.querySelectorAll("button").forEach(button => {
+    button.addEventListener("mouseover", () => {
+        button.style.transform = "scale(1.05)";
+    });
+    button.addEventListener("mouseout", () => {
+        button.style.transform = "scale(1)";
+    });
+});

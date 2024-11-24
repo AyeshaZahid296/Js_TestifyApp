@@ -160,5 +160,11 @@ const quizQuestions = [
     correct: 0,
   },
 ];
-
+function checkAnswer(questionIndex, selectedOption) {
+    if (quizQuestions[questionIndex].answer === selectedOption) {
+        alert("Correct!");
+    } else {
+        alert("Incorrect.");
+    }
+}
 

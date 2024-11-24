@@ -23,9 +23,7 @@ body {
 
 .back-button {
     background-color: #f9c6c9;
-    /* Light pastel color */
     color: #333;
-    /* Neutral text color */
     font-size: 16px;
     padding: 10px 20px;
     border: none;
@@ -37,34 +35,20 @@ body {
 
 .back-button:hover {
     background-color: #f4979d;
-    /* Slightly darker shade */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* .container, */
 .game-container,
 .quiz-container {
-    max-width: 50%;
+    max-width: 60%;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-/* 
-.card {
-    background: #ffdfdf;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px 0;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
 
-.card:hover {
-    transform: scale(1.01);
-} */
  .container {
      display: flex;
      flex-wrap: wrap;
@@ -81,12 +65,11 @@ body {
      background: #ffdfdf;
      border-radius: 8px;
      padding: 20px;
-     margin: 10px 0;
+     margin: 30px 0;
      text-align: center;
      cursor: pointer;
      transition: transform 0.3s;
      width: 48%;
-     /* Set card width to 48% to fit two cards per row */
      box-sizing: border-box;
  }
 
@@ -108,8 +91,6 @@ button {
 button:hover {
     background: #ff9eb8;
 }
-
-/*... */
 /* Header Styles */
 .header {
     text-align: center;
@@ -283,4 +264,36 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for mobile and tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .game-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .back-button-container {
+        position: fixed;
+        top: 20px;
+        left: 15px;
+    }
+
+    .array-container {
+        flex-direction: column;
+    }
 }

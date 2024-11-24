@@ -3,7 +3,7 @@ let inputFields = [];
 
 function updateArrayDisplay() {
   const arrayDisplay = document.getElementById("arrayDisplay");
-  arrayDisplay.innerHTML = ""; // Clear previous display
+  arrayDisplay.innerHTML = ""; 
 
   const arrayContainer = document.createElement("div");
   arrayContainer.className = "array-container";
@@ -11,7 +11,7 @@ function updateArrayDisplay() {
   array.forEach((item) => {
     const elementCard = document.createElement("div");
     elementCard.className = "array-element";
-    elementCard.textContent = `${item}`; // Display index and value
+    elementCard.textContent = `${item}`; 
     arrayContainer.appendChild(elementCard);
   });
 
@@ -21,7 +21,7 @@ function updateArrayDisplay() {
 
 function createInputFields(count) {
   const inputContainer = document.getElementById("inputContainer");
-  inputContainer.innerHTML = ""; // Clear previous input fields
+  inputContainer.innerHTML = ""; 
   inputFields = [];
 
   for (let i = 0; i < count; i++) {
@@ -86,12 +86,9 @@ function sliceArray() {
     const sliced = array.slice(parseInt(start), parseInt(end));
 
     alert(`Sliced array: [${sliced.join(", ")}]`);
-    // Do not modify the original array in a slice operation
     updateArrayDisplay();
   }
 }
-
-
 function sortArray() {
   array.sort();
   updateArrayDisplay();
@@ -125,7 +122,6 @@ function resetArray() {
   updateArrayDisplay();
 }
 
-// Handle slider change
 document.getElementById("arraySlider").addEventListener("input", function () {
   const count = parseInt(this.value);
   document.getElementById("sliderValue").textContent = count;
@@ -134,7 +130,6 @@ document.getElementById("arraySlider").addEventListener("input", function () {
 
 updateArrayDisplay();
 
-
 function goBackToHome() {
-  window.location.href = "index.html"; // Change "index.html" to your home page file name
+  window.location.href = "index.html"; 
 }
