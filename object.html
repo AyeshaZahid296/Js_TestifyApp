@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Manipulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Object Manipulator</h1>
+    <p>Create and manipulate objects with ease!</p>
+    <div class="back-button-container">
+      <button class="back-button" onclick="goBackToHome()">⬅ Back to Home</button>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <h3>Create an Object</h3>
+    <div class="key-value-inputs">
+      <div class="key-value-pair">
+        <input type="text" class="key-input" placeholder="Enter Key">
+        <input type="text" class="value-input" placeholder="Enter Value">
+      </div>
+    </div>
+    <button onclick="addInputField()">Add Another Key-Value Pair</button>
+
+    <h3>Object</h3>
+    <div id="objectOutput"></div>
+
+    <h3>Methods</h3>
+    <button onclick="addObject()">Add Property</button>
+    <button onclick="deleteObject()">Delete Property</button>
+    <button onclick="updateObject()">Update Property</button>
+    <button onclick="checkProperty()">Check Property</button>
+    <button onclick="clearAllProperties()">Clear All Properties</button>
+    <button onclick="showObject()">Show Object</button>
+    <button onclick="resetObject()">Reset Object</button>
+    <button onclick="getKeys()">Get Keys</button>
+    <button onclick="getValues()">Get Values</button>
+    <button onclick="clearObject()">Clear Object</button>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="object.js"></script>
+</body>
+
+</html>

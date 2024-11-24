@@ -1,0 +1,286 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #ffefd5;
+    border-bottom: 3px solid #ffc0cb;
+}
+
+/* back button */
+.back-button-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.back-button {
+    background-color: #f9c6c9;
+    /* Light pastel color */
+    color: #333;
+    /* Neutral text color */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #f4979d;
+    /* Slightly darker shade */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .container, */
+.game-container,
+.quiz-container {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* 
+.card {
+    background: #ffdfdf;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+} */
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     max-width: 90%;
+     margin: 20px auto;
+     padding: 20px;
+     background: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+ }
+
+ .card {
+     background: #ffdfdf;
+     border-radius: 8px;
+     padding: 20px;
+     margin: 10px 0;
+     text-align: center;
+     cursor: pointer;
+     transition: transform 0.3s;
+     width: 48%;
+     /* Set card width to 48% to fit two cards per row */
+     box-sizing: border-box;
+ }
+
+ .card:hover {
+     transform: scale(1.01);
+ }
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #ffc0cb;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9eb8;
+}
+
+/*... */
+/* Header Styles */
+.header {
+    text-align: center;
+    background-color: #f9c6c9;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Game Container Styles */
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-container h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.array-input {
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#arrayOutput {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f4979d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f06268;
+}
+
+/* Back Button */
+.back-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button {
+    background-color: #f4979d;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #f06268;
+}
+
+/* array  disaply  */
+.array-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.array-element {
+    padding: 10px 15px;
+    background-color: #ffdfdf;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 60px;
+    border: 1px solid #ffcccc;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.array-element:hover {
+    transform: scale(1.1);
+    background-color: #ffc0c0;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.key-value-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.key-value-pair input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #ffc0cb;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9eb8;
+}
+
+#objectOutput {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Manipulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>String Manipulator</h1>
+    <p>Explore strings with fun transformations!</p>
+    <div class="back-button-container">
+      <button class="back-button" onclick="goBackToHome()">⬅ Back to Home</button>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <p>Enter a string:</p>
+    <input type="text" id="stringInput" placeholder="Type your string here" oninput="clearOutput()">
+    <div class="actions">
+      <button onclick="reverseString()">Reverse</button>
+      <button onclick="toUpperCase()">To Uppercase</button>
+      <button onclick="toLowerCase()">To Lowercase</button>
+      <button onclick="findLength()">Find Length</button>
+      <button onclick="replaceSpaces()">Replace Spaces</button>
+      <button onclick="removePunctuation()">Remove Punctuation</button>
+      <button onclick="trimString()">Trim</button>
+      <button onclick="checkIncludes()">Check Includes</button>
+      <button onclick="toTitleCase()">To Title Case</button>
+      <button onclick="replaceSubstring()">Replace Substring</button>
+    </div>
+
+    <div id="stringOutput"></div>
+    <button class="back-btn" onclick="goHome()">Back to Home</button>
+  </div>
+<script src="string.js"></script>
+</body>
+
+</html>

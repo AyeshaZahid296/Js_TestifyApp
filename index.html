@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Interactive Learning Hub</h1>
+        <p>Explore, Play, and Learn</p>
+    </div>
+
+    <div class="container">
+        <div class="card" onclick="navigate('array.html')">
+            <h2>Array Manipulator</h2>
+            <p>Play with arrays: sort, reverse, and more!</p>
+        </div>
+        <div class="card" onclick="navigate('object.html')">
+            <h2>Object Manipulator</h2>
+            <p>Create, edit, or explore objects!</p>
+        </div>
+        <div class="card" onclick="navigate('string.html')">
+            <h2>String Manipulator</h2>
+            <p>Play with strings: reverse, find, and more!</p>
+        </div>
+        <div class="card" onclick="navigate('quiz.html')">
+            <h2>Quiz</h2>
+            <p>Test your knowledge with fun questions!</p>
+        </div>
+        <!-- <div class="card">
+            <div class="dynamic-txt">
+                <ul>
+                    <li><span>Explore</span></li>
+                    <li><span>Learn</span></li>
+                    <li><span>Play</span></li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- <style>
+            .dynamic-txt li span {
+                position: relative;
+            }
+
+            .dynamic-txt {
+                margin-left: 15px;
+                line-height: 90px;
+                height: 90px;
+                background: #ffdfdf;
+                overflow: hidden;
+            }
+
+            .dynamic-txt li {
+                list-style-type: none;
+                font-size: 60px;
+                font-weight: 500;
+                position: relative;
+                top: 0;
+                animation: slide 6s steps(3) infinite;
+            }
+
+            @keyframes slide {
+                100% {
+                    top: -270px;
+                }
+            }
+
+            .dynamic-txt li span::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-left: 2px solid;
+                left: 0;
+                background-color: #ffdfdf;
+                animation: typing 2s steps(10) infinite;
+            }
+
+            @keyframes typing {
+                100% {
+                    left: 100%;
+                    margin: 0 -35px 0 35px;
+                }
+            }
+        </style> -->
+    </div>
+
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>

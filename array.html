@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Manipulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Array Manipulator</h1>
+    <div class="back-button-container">
+      <button class="back-button" onclick="goBackToHome()">⬅ Back to Home</button>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <label for="arraySlider">Number of Elements:</label>
+    <input type="range" id="arraySlider" min="1" max="10" value="5">
+    <span id="sliderValue">5</span>
+
+    <div id="inputContainer"></div>
+    <button onclick="createArray()">Create Array</button>
+    <div id="arrayDisplay">Array: []</div>
+
+    <div class="methods">
+      <button onclick="pushElement()">Push</button>
+      <button onclick="popElement()">Pop</button>
+      <button onclick="shiftElement()">Shift</button>
+      <button onclick="unshiftElement()">Unshift</button>
+      <button onclick="spliceArray()">Splice</button>
+      <button onclick="sliceArray()">Slice</button>
+      <button onclick="sortArray()">Sort</button>
+      <button onclick="reverseArray()">Reverse</button>
+      <button onclick="concatArray()">Concat</button>
+      <button onclick="indexOfArray()">Index Of</button>
+      <button onclick="resetArray()">Reset</button>
+    </div>
+  </div>
+
+  <script src="array.js"></script>
+</body>
+
+</html>
